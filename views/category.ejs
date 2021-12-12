@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title><%= property %></title>
+		<meta charset="UTF-8">
+  		<meta name="description" content="Movie Downloading Site">
+  		<meta name="keywords" content="Movie,Download,Latest,Released,Hollywood,Film,Bollywood">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/index.css">
+	</head>
+	<body>
+		<div class="logo">
+			<a href="/"><img src="/logo.png" width="318px" height="77px"></a>
+		</div>
+		<div class="searchdiv" style="max-width:318px;width:100%;margin:auto;margin-bottom:20px;">
+			<form action="/search" method="post">
+				<input type="text" class="searchtext" name="search" placeholder="movie-name">
+				<input type="submit" class="search" value="search">
+			</form>
+		</div>
+		<div class="nav">
+			<div class="dropdown"><a href="/" class="nav-element">Home</a></div>
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Category</a> 
+				<div class="dropdown-content">
+					<a href="/category/Hindi">Hindi Dubbed</a>
+					<a href="/category/English">English</a>
+					<a href="/category/Hollywood">Hollywood</a>
+					<a href="/category/Bollywood">Bollywood</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Genre</a> 
+				<div class="dropdown-content">
+					<a href="/genre/Action">Action</a>
+					<a href="/genre/Adventure">Adventure</a>
+					<a href="/genre/Comedy">Comedy</a>
+					<a href="/genre/Crime">Crime</a>
+					<a href="/genre/Fantasy">Fantasy</a>
+					<a href="/genre/Horror">Horror</a>
+					<a href="/genre/Mystery">Mystery</a>
+					<a href="/genre/Sci-fi">Sci-Fi</a>
+					<a href="/genre/Romance">Romance</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Quality</a> 
+				<div class="dropdown-content">
+					<a href="/quality/480p">480p movies</a>
+					<a href="/quality/720p">720p movies</a>
+					<a href="/quality/1080p">1080p movies</a>
+					<a href="/size/300">300MB movies</a>
+					<a href="/size/700">700MB movies</a>
+					<a href="/size/1000">1GB movies</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<a href="/web-series" class="nav-element">Web Series</a> 
+			</div> 
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Year</a> 
+				<div class="dropdown-content">
+					<a href="/year/2010">2010-2020</a>
+					<a href="/year/2000">2000-2010</a>
+					<a href="/year/1990">1990-2000</a>
+					<a href="/year/1980">1980-1990</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<a href="/how-to-download" class="nav-element">How to download</a> 
+			</div> 
+		</div>
+		<div class="nav-collapse" id="tog">
+			<div class="dropdown">
+				<a href="#" class="nav-element">Menu</a>
+			</div>
+		</div>
+			<ul class="collapse good" id="do">
+				<li>Home</li>
+				<li id="category">
+					Category
+					<ul class="collapse good" id="cat">
+						<a href="/category/Hindi"><li style="font-size:14px;">Hindi Dubbed</li></a>
+						<a href="/category/English"><li style="font-size:14px;">English</li></a>
+						<a href="/category/Hollywood"><li style="font-size:14px;">Hollywood</li></a>
+						<a href="/category/Bollywood"><li style="font-size:14px;">Bollywood</li></a>
+					</ul>
+				</li>
+				<li id="genre">
+					Genre
+					<ul class="collapse good" id="gen">
+						<a href="/genre/Action"><li style="font-size:14px;">Action</li></a>
+						<a href="/genre/Adventure"><li style="font-size:14px;">Adventure</li></a>
+						<a href="/genre/Comedy"><li style="font-size:14px;">Comedy</li></a>
+						<a href="/genre/Crime"><li style="font-size:14px;">Crime</li></a>
+						<a href="/genre/Fantasy"><li style="font-size:14px;">Fantasy</li></a>
+						<a href="/genre/Horror"><li style="font-size:14px;">Horror</li></a>
+						<a href="/genre/Mystery"><li style="font-size:14px;">Mystery</li></a>
+						<a href="/genre/Sci-fi"><li style="font-size:14px;">Sci-Fi</li></a>
+						<a href="/genre/Romance"><li style="font-size:14px;">Romance</li></a>
+					</ul>
+				</li>
+				<li id="quality">
+					Quality
+					<ul class="collapse good" id="qual">
+						<a href="/quality/480p"><li style="font-size:14px;">480p movies</li></a>
+						<a href="/quality/720p"><li style="font-size:14px;">720p movies</li></a>
+						<a href="/quality/1080p"><li style="font-size:14px;">1080p movies</li></a>
+						<a href="/size/300"><li style="font-size:14px;">300MB movies</li></a>
+						<a href="/size/700"><li style="font-size:14px;">700MB movies</li></a>
+						<a href="/size/1000"><li style="font-size:14px;">1GB movies</li></a>
+					</ul>
+				</li>
+				<a href="/web-series"><li style="font-size:14px;">
+					Web Series
+				</li></a>
+				<li id="year">
+					Year
+					<ul class="collapse good" id="yea">
+						<a href="/year/2010"><li style="font-size:14px;">2010-2020</li></a>
+						<a href="/year/2000"><li style="font-size:14px;">2000-2010</li></a>
+						<a href="/year/1990"><li style="font-size:14px;">1990-2000</li></a>
+						<a href="/year/1980"><li style="font-size:14px;">1980-1990</li></a>
+					</ul>
+				</li>
+				<a href="/how-to-download"><li>How to download</li></a>
+			</ul>
+		<div style="font-size:22px;color:white;width:86%;margin:auto;margin-bottom:20px;" class="nav"><%= value %> Movies</div>
+		<div style="font-size:22px;padding:3px;color:white;width:86%;margin:auto;margin-bottom:20px;" class="nav-collapse"><%= value %> Movies</div>
+		<marquee><span style="color:red">Note:- </span>Bookmark this Domain for latest released movies and update!!!</marquee>
+		<div class="content">
+			<% Array.from(movies).forEach(function(movie){ %>
+				<a href="/<%= movie.title %>"><article>
+					<img src="/thumbnails/<%= movie.thumbnail %>" class="thumb">
+					<h2><%= movie.name.substring(0,100) %></h2>
+				</article></a>
+			<% }); %>
+		</div>
+		<div class="page" id ="page" style="width:145px;margin:auto;margin-top:15px;">
+			<a href="/<%= property %>/<%= value %>/p/<%= cur_page - 1 %>" id="prev" class="move">Prev</a>			
+			<a href="/<%= property %>/<%= value %>/p/1" id="first" class="move">1</a>
+			<% if( cur_page != 1 && cur_page != tot_page){ %>
+				<a href="/<%= property %>/<%= value %>/p/<%= cur_page %>" class="active move"><%= cur_page %></a>
+			<% } %>
+			<a href="/<%= property %>/<%= value %>/p/<%= tot_page %>" id="last" class="move"><%= tot_page %></a>
+			<a href="/<%= property %>/<%= value %>/p/<%= cur_page + 1 %>" id="next" class="move">Next</a>
+		</div>
+		<div class="footer">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/about">Disclaimer</a></li>
+				<li><a href="/about">DMCA</a></li>
+			<ul>
+		</div>
+		<% if(tot_page == 1){ %>
+			<script>
+				document.getElementById("page").style.display = "none";
+			</script>
+		<% }else if(cur_page == 1){ %>
+			<script>
+				document.getElementById("first").classList.add("active");
+				document.getElementById("prev").style.display = "none";
+			</script>
+		<% } %>
+		<% if(cur_page == tot_page){ %>
+			<script>
+				document.getElementById("last").classList.add("active");
+				document.getElementById("next").style.display = "none";
+			</script>
+		<% } %>
+		<script src="/scripts/index.js"></script>
+	</body>
+</html>	

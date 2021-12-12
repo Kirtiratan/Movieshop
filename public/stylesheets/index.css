@@ -1,0 +1,254 @@
+body{
+				background-color:#eee;
+				overflow-wrap:break-word;
+			}
+			.logo{
+				max-width:318px;
+				width:100%;
+				height:87px;
+				padding-top:10px;
+				margin:auto;
+				margin-bottom:20px;
+			}
+			.logo img{
+				max-width:318px;
+				width:100%;
+				height:77px;
+				border-radius:5px;
+				border:1px solid #225dab;
+			}
+			.searchtext{
+				outline:none;
+				border:1px solid black;
+				width:225px;
+				padding-left:5px;
+				height:30px;
+				border-radius:3px;
+			}
+			.search{
+				background-color:green;
+				color:white;
+				border:1px solid black;
+				border-radius:3px;
+				height:35px;
+				cursor:pointer;
+				outline:none;
+				width:80px;
+			}
+			.nav{
+				width:86%;
+				margin:auto;
+				border-radius: 5px;
+				background-color:#225dab;
+				text-align:center;
+				display:block;
+				box-shadow:3px 3px #9a9ca1;
+				padding:0;
+				margin-bottom:10px;
+			}
+			.nav-element{
+				font-family:quicksand;
+				text-decoration: none;
+				font-size:22px;
+				color:white;
+				text-align:center;
+				display:inline-block;
+				border-right:1px solid black;
+				padding-right:40px;
+				font-weight:500;
+			}
+			.nav-element:hover{
+				color:black;
+			}
+			.nav-collapse{
+				width:86%;
+				margin:auto;
+				border-radius: 5px;
+				background-color:#225dab;
+				display:none;
+				box-shadow:3px 3px #9a9ca1;
+				padding:0;
+				margin-bottom:20px;
+				cursor:pointer;
+			}
+			a{
+				text-decoration: none;
+			}
+			.collapse{
+				padding:0;
+				width:84%;
+				cursor:pointer;
+				margin:auto;
+				list-style-type:none;
+				padding-left:5px;
+				background-color:#225dab;
+				border-radius:3px;
+			}
+			.active{
+				color:red;
+			}
+			.move{
+				border:1px solid black;
+				border-radius: 2px;
+				background-color: white;
+				width:auto;
+				text-decoration: none;
+				padding:3px;
+			}
+			.good{
+				display:none;
+			}
+			.collapse li{
+				width:100%;
+				color:white;
+				margin-bottom:5px;
+				background-color:#225dab;
+			}
+			.collapse li:hover{
+				color:black;
+			}
+			
+			.dropdown {
+				overflow: hidden;
+				height:100%;
+				font-size: 14px;  
+				border: none;
+				outline: none;
+				padding: 4px 6px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+				display:inline-block;
+			}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #225dab;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			.dropdown-content a {
+				float: none;
+				color: white;
+				font-size:16px;
+				font-weight:500;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+			.dropdown-content a:hover {
+				background-color: #fff;
+				color:black;
+			}
+			.content{
+				width:86%;
+				text-align:center;
+				margin:auto;
+			}
+			article{
+				box-shadow: 4px 4px #ccc;
+				background-color:white;
+				width:190px;
+				border-radius:3px;
+				display:inline-block;
+				margin:14px;
+				}
+			.thumb{
+				width:190px;
+				padding:auto;
+				height:250px;
+			}
+			h2{
+				height:165px;
+				color:black;
+				font-size:20px;
+				font-weight:400;
+			}
+			.footer{
+				text-align:center;
+				margin-top:20px;
+			}
+			.footer ul{
+				list-style-type:none;
+				width:300px;
+				margin:auto;
+			}
+			.footer li{
+				padding:5px;
+				display:inline-block;
+				width:auto;
+				border-right:1px solid black;
+			}
+			.menu{
+				width:100%;
+				height:device-height;
+				color:white;
+				text-decoration:none;
+				text-align:center;
+				padding-top:10%;
+				background-color:black;
+				display:none;
+			}
+			@media(min-width:830px){
+				.collapse{
+					display:none;
+				}
+			}
+			@media (max-width:830px) {
+				.nav {
+					display:none;
+				}
+				.footer li{
+					font-size:10px;
+				}
+				.nav-collapse{
+					display:block;
+				}
+			}
+			@media(max-width:350px){
+				.footer ul{
+					width:180px;
+				}
+				.logo{
+					width:250px;
+				}
+				h1{
+					font-size:25px;
+				}
+				h2{
+					font-size:15px;
+					height:115px;
+				}
+				li,p{
+					font-size:13px;
+				}
+				.searchdiv{
+					width:250px;
+					text-align:center;
+				}
+				.search{
+					width:50px;
+				}
+				.searchtext{
+					width:170px;
+				}
+				article{
+					box-shadow: 1px 1px #ccc;
+					backgrond-color:white;
+					width:110px;
+					border-radius:2px;
+					display:inline-block;
+					margin:1px;
+					margin-bottom:10px;
+				}
+				.thumb{
+					width:110px;
+					padding:0;
+					height:150px;
+				}
+			}

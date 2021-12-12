@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="description" content="Movie Downloading Site">
+  		<meta name="keywords" content="Movie,Download,Latest,Released,Hollywood,Film,Bollywood">
+		<title>MoviesHub for downloading movies in high quality</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/index.css">
+	</head>
+	<body>
+		<div class="logo">
+			<a href="/"><img src="/logo.png" width="318px" height="77px"></a>
+		</div>
+		<div class="searchdiv" style="max-width:318px;width:100%;margin:auto;margin-bottom:20px;">
+			<form action="/search" method="post">
+				<input type="text" class="searchtext" name="search" placeholder="movie-name">
+				<input type="submit" class="search" value="search">
+			</form>
+		</div>
+		<div class="nav">
+			<div class="dropdown"><a href="/" class="nav-element">Home</a></div>
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Category</a> 
+				<div class="dropdown-content">
+					<a href="/category/Hindi">Hindi Dubbed</a>
+					<a href="/category/English">English</a>
+					<a href="/category/Hollywood">Hollywood</a>
+					<a href="/category/Bollywood">Bollywood</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Genre</a> 
+				<div class="dropdown-content">
+					<a href="/genre/Action">Action</a>
+					<a href="/genre/Adventure">Adventure</a>
+					<a href="/genre/Comedy">Comedy</a>
+					<a href="/genre/Crime">Crime</a>
+					<a href="/genre/Fantasy">Fantasy</a>
+					<a href="/genre/Horror">Horror</a>
+					<a href="/genre/Mystery">Mystery</a>
+					<a href="/genre/Sci-fi">Sci-Fi</a>
+					<a href="/genre/Romance">Romance</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Quality</a> 
+				<div class="dropdown-content">
+					<a href="/quality/480p">480p movies</a>
+					<a href="/quality/720p">720p movies</a>
+					<a href="/quality/1080p">1080p movies</a>
+					<a href="/size/300">300MB movies</a>
+					<a href="/size/700">700MB movies</a>
+					<a href="/size/1000">1GB movies</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<a href="/web-series" class="nav-element">Web Series</a> 
+			</div> 
+			<div class="dropdown">
+				<i class="fa fa-caret-down"></i>
+				<a href="#" class="nav-element">Year</a> 
+				<div class="dropdown-content">
+					<a href="/year/2010">2010-2020</a>
+					<a href="/year/2000">2000-2010</a>
+					<a href="/year/1990">1990-2000</a>
+					<a href="/year/1980">1980-1990</a>
+				</div>
+			</div> 
+			<div class="dropdown">
+				<a href="/how-to-download" class="nav-element">How to download</a> 
+			</div> 
+		</div>
+		<div class="nav-collapse" id="tog">
+			<div class="dropdown">
+				<a href="#" class="nav-element">Menu</a>
+			</div>
+		</div>
+			<ul class="collapse good" id="do">
+				<li>Home</li>
+				<li id="category">
+					Category
+					<ul class="collapse good" id="cat">
+						<a href="/category/Hindi"><li style="font-size:14px;">Hindi Dubbed</li></a>
+						<a href="/category/English"><li style="font-size:14px;">English</li></a>
+						<a href="/category/Hollywood"><li style="font-size:14px;">Hollywood</li></a>
+						<a href="/category/Bollywood"><li style="font-size:14px;">Bollywood</li></a>
+					</ul>
+				</li>
+				<li id="genre">
+					Genre
+					<ul class="collapse good" id="gen">
+						<a href="/genre/Action"><li style="font-size:14px;">Action</li></a>
+						<a href="/genre/Adventure"><li style="font-size:14px;">Adventure</li></a>
+						<a href="/genre/Comedy"><li style="font-size:14px;">Comedy</li></a>
+						<a href="/genre/Crime"><li style="font-size:14px;">Crime</li></a>
+						<a href="/genre/Fantasy"><li style="font-size:14px;">Fantasy</li></a>
+						<a href="/genre/Horror"><li style="font-size:14px;">Horror</li></a>
+						<a href="/genre/Mystery"><li style="font-size:14px;">Mystery</li></a>
+						<a href="/genre/Sci-fi"><li style="font-size:14px;">Sci-Fi</li></a>
+						<a href="/genre/Romance"><li style="font-size:14px;">Romance</li></a>
+					</ul>
+				</li>
+				<li id="quality">
+					Quality
+					<ul class="collapse good" id="qual">
+						<a href="/quality/480p"><li style="font-size:14px;">480p movies</li></a>
+						<a href="/quality/720p"><li style="font-size:14px;">720p movies</li></a>
+						<a href="/quality/1080p"><li style="font-size:14px;">1080p movies</li></a>
+						<a href="/size/300"><li style="font-size:14px;">300MB movies</li></a>
+						<a href="/size/700"><li style="font-size:14px;">700MB movies</li></a>
+						<a href="/size/1000"><li style="font-size:14px;">1GB movies</li></a>
+					</ul>
+				</li>
+				<a href="/web-series"><li style="font-size:14px;">
+					Web Series
+				</li></a>
+				<li id="year">
+					Year
+					<ul class="collapse good" id="yea">
+						<a href="/year/2010"><li style="font-size:14px;">2010-2020</li></a>
+						<a href="/year/2000"><li style="font-size:14px;">2000-2010</li></a>
+						<a href="/year/1990"><li style="font-size:14px;">1990-2000</li></a>
+						<a href="/year/1980"><li style="font-size:14px;">1980-1990</li></a>
+					</ul>
+				</li>
+				<a href="/how-to-download"><li>How to download</li></a>
+			</ul>
+		<div class="content" style="text-align: left;border:1px solid rgba(200,200,200,0.5);box-sizing: border-box;background-color: white;">
+			<div id="about" style="background-color: #a1e9f7;padding:10px;box-sizing: border-box;">
+				<h1>About:</h1>
+				<p><strong>Movieshub</strong> is best website/platform for Bollywood and Hollywood HD movies.</p>
+				<p>We sharing here direct download links without any irritating ads or pop-ups.</p>
+				<p>Here we share various filesharing sites links for one movie in many quality like bluray, hdrip, brrip, web-dl, 480p, 720p, 1080p, and 4k All resolutions are available only here. You Can Download them for free of cost and enjoy watching movies and Tv/web series.</p>
+			</div>
+			<div id="disclaimer" style="background-color: #c9b0e8;padding:10px;box-sizing: border-box;">
+				<h1>Site Disclaimer: </h1>
+				<p>All my post are free available on internet posted by somebody else.</p>
+				<p>I’m not violating any copyrighted law. If anything is against law, please notify me at (movieshub2ktwenty@gmail.com) or fill the DMCA form below.</p>
+				<p>If you think we shared your content or product without your permission, then you can claim using our dmca contact form page. We never host any file on our server all point to content hosted on third party websites.</p>
+			</div>
+			<div id="dmca" style="background-color: #b1b368;padding:10px;box-sizing: border-box;">
+				<h1>DMCA:</h1>
+				<p><strong>Digital Millennium Copyright Act (DMCA)</strong> is a United States copyright law that allows specific files to be removed by their owners if they are being used without proper permission. In order to file a complaint, connect with us and we will respond you in 24 hours.</p>
+				<h3 style="text-decoration: underline;color:red;">Please fill the form for DMCA with content link:</h3>
+				<form action="/report" method="POST" style="width:230px;margin:auto;text-align: left;">
+					Name(required):
+					<input type="text" style="width:230px;display: block;margin: auto;margin-bottom: 10px;font-size: 16px;border-radius: 2px;border:1px solid black;color:black;" name="report[name]" required>
+					Email(required):
+					<input type="email" style="width:230px;display: block;margin: auto;margin-bottom: 10px;font-size: 16px;border-radius: 2px;border:1px solid black;color:black;" name="report[email]"required>
+					Your message with content link:
+					<textarea type="textarea" style="width:230px;min-height:150px;display: block;margin: auto;margin-bottom:10px;font-size: 16px;border-radius: 2px;border:1px solid black;color:black;" name="report[content]" required></textarea>
+					<input type="submit" style="display: block;margin: auto;margin-bottom: 10px;border-radius: 2px;border:1px solid black;color:black;" value="Submit" style="cursor:pointer;">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+document.getElementById("tog").addEventListener("click",function(){
+				document.getElementById("do").classList.toggle("good");
+			});
+			document.getElementById("category").addEventListener("click",function(){
+				document.getElementById("cat").classList.toggle("good");
+				document.getElementById("gen").classList.add("good");
+				document.getElementById("qual").classList.add("good");
+				document.getElementById("yea").classList.add("good");
+			});
+			document.getElementById("genre").addEventListener("click",function(){
+				document.getElementById("gen").classList.toggle("good");
+				document.getElementById("cat").classList.add("good");
+				document.getElementById("qual").classList.add("good");
+				document.getElementById("yea").classList.add("good");
+			});
+			document.getElementById("quality").addEventListener("click",function(){
+				document.getElementById("qual").classList.toggle("good");
+				document.getElementById("gen").classList.add("good");
+				document.getElementById("cat").classList.add("good");
+				document.getElementById("yea").classList.add("good");
+			});
+			document.getElementById("year").addEventListener("click",function(){
+				document.getElementById("yea").classList.toggle("good");
+				document.getElementById("gen").classList.add("good");
+				document.getElementById("qual").classList.add("good");
+				document.getElementById("cat").classList.add("good");
+			});
